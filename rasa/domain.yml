@@ -1,0 +1,20 @@
+version: "2.0"
+
+intents:
+  - ask_for_discussion
+  - affirm
+
+entities:
+  - topic
+
+actions:
+  - action_find_discussion
+  - utter_more_help
+
+responses:
+  utter_more_help:
+    - text: "Can I help you with anything else?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

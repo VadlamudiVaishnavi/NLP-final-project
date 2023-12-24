@@ -1,0 +1,43 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+pipeline:
+  # Tokenizer
+  - name: WhitespaceTokenizer
+
+  # Featurizers
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+
+  # Intent classifier
+  - name: DIETClassifier
+    epochs: 100
+    constrain_similarities: true
+
+  # Entity recognizer (optional, uncomment if you use entities)
+  # - name: CRFEntityExtractor
+
+  # Response selector for retrieval actions (optional, uncomment if you use retrieval actions)
+  # - name: ResponseSelector
+  #   epochs: 100
+
+  # Fallback classifier for low confidence predictions
+  - name: FallbackClassifier
+    threshold: 0.3
+    ambiguity_threshold: 0.1
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/policies/
+policies:
+  # This policy memoizes stories
+  - name: MemoizationPolicy
+
+  # This policy uses a neural model (TED) to predict the next action
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+    constrain_similarities: true
+
+  # This policy handles rules for FAQs and form-like interactions
+  - name: RulePolicy

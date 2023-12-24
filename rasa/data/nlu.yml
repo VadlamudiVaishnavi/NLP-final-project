@@ -1,0 +1,11 @@
+version: "2.0"
+
+nlu:
+- intent: ask_for_discussion
+  examples: |
+    - I want to know about [housing](topic)
+    - Tell me about [Boston housing](topic)
+    - Show discussions on [transportation](topic)
+    - Find posts about [parking in downtown Boston](topic)
+    - What are people saying about [rent prices](topic) in Boston?
+    - Show me [recent news](topic) about Boston
