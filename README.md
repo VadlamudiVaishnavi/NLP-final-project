@@ -1,5 +1,5 @@
 
-<img src="nlp_directories-1.png" alt="Alt text" width="300" height="200"/>
+<img src="nlp_directories-1.png" alt="Alt text" height="800"/>
 
 ## subreddits
 
