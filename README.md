@@ -1,5 +1,5 @@
 
-![Alt text](nlp_directories-1.png)
+<img src="nlp_directories-1.png" alt="Alt text" width="300" height="200"/>
 
 ## subreddits
 
