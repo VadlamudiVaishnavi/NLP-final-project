@@ -25,7 +25,7 @@ class ActionFindDiscussion(Action):
         preprocessed_text = preprocess.clean_social_media_text(user_message)
 
         # Define paths
-        model_path = "/projectnb/cs505ws/students/saisurya/NLP/models/bertopic_model_submissions_boston_new"
+        model_path = "/projectnb/cs505ws/students/saisurya/NLP/models/bertopic_model_boston"
         data_path = "/projectnb/cs505ws/students/saisurya/NLP/topic_labeled_data/boston_with_topics_new.csv"
 
         # Load the embedding model - make sure this is the same model used during training
