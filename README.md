@@ -1,5 +1,5 @@
 
-<img src="nlp_directories-1.png" alt="Alt text" height="800"/>
+<img src="nlp_directories-1.png" alt="Alt text" width = "400" height="800"/>
 
 ## subreddits
 
@@ -79,9 +79,7 @@ The `rasa.ipynb` file is a Jupyter notebook used to train a Rasa model.
 **Output**:
 - The output of this process is a trained Rasa model. It is saved in the specified `rasa` directory. The model will be in a subdirectory named after the current date and time, containing all the necessary files to run the Rasa chatbot.
 
-
-![Alt text](work_process-1.png)
-
+<img src="work_process-1.png" alt="Alt text" width="800"/>
 
 The flowchart represents how a Rasa chatbot utilizes a BERTopic model to process user input and provide relevant discussion topics from a subreddit.
 
